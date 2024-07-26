@@ -186,16 +186,17 @@ section h1 {
 }
 
 .video-container {
-    width: 80%;
+    width: 90%;
     margin-bottom: 1em;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
 }
 
-video {
+iframe {
     width: 100%;
-    height: 20%;
+    height: 480px;
+    border: none;
     border-radius: 10px;
 }
 
@@ -233,8 +234,10 @@ footer {
     .welcome-text p {
         font-size: 1em;
     }
+    iframe {
+        height: 360px;
+    }
 }
-
 @media (max-width: 480px) {
     .welcome-text h2 {
         font-size: 1.2em;
@@ -242,10 +245,16 @@ footer {
     .welcome-text p {
         font-size: 0.9em;
     }
+    iframe {
+        height: 240px;
+    }
 }
-
 @media (max-width: 424px) {
     .welcome-text {
         color: white; /* Change text color to white for screens 424px and below */
     }
+    iframe {
+        height: 200px;
+    }
 }
+
